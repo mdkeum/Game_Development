@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Node (if you ever add tooling later)
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Backup files
+*.bak
+*.tmp
