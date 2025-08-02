@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin-top: 30px;
+}
+
+#logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff6347;
+  text-shadow: 1px 1px 2px #00000033;
+  margin-bottom: 10px;
+}
+
+#gameArea {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  overflow: hidden;
+}
+
+#square {
+  width: 50px;
+  height: 50px;
+  background-color: #ff6347;
+  position: absolute;
+  cursor: pointer;
+  display: none;
+  transition: top 0.2s, left 0.2s;
+}
+
+#square.clicked {
+  animation: pop 0.2s;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+#startBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
